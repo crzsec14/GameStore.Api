@@ -1,0 +1,29 @@
+GET http://localhost:5122/games
+
+###
+GET http://localhost:5122/games/1
+
+###
+POST http://localhost:5122/games
+Content-Type: application/json
+
+{
+      "name": "Street Fighter II",
+      "genreId": 1,
+      "price": 9.99,
+      "releaseDate": "1991-02-01"
+}
+
+###
+PUT http://localhost:5122/games/1
+Content-Type: application/json
+
+{
+    "Name": "test",
+    "genreId": 5,
+    "price": 19.99,
+    "releaseDate": "2011-11-18"
+}
+
+###
+DELETE http://localhost:5122/games/2
